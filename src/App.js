@@ -4,14 +4,14 @@ import Form from './Form'
 import QuestionList from './QuestionList';
 import Results from './Results';
 
+
 function App() {
 
   const [questions, setQuestions] = useState([]);
   const [showForm, setShowForm] = useState(true);
   const [showQuestions, setShowQuestions] = useState(false);
   const [showResults, setShowResults] = useState(false);
-  const [finalScore, setFinalScore] = useState(0)
-
+  const [finalScore, setFinalScore] = useState(0);
 
 
   function handleStart(event, questionArray) {
@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>True or False</h1>
+        <h1>TRUE OR FALSE?</h1>
 
       </header>
       <main className="wrapper">
@@ -67,7 +67,7 @@ function App() {
         }
 
       </main>
-      <footer>Created at Juno Colllege of Technology</footer>
+      <footer>Created at <a href="https://junocollege.com/">Juno College of Technology</a></footer>
     </div>
   )
 }

@@ -7,6 +7,7 @@ function Form(props) {
     const [newQuestions, setNewQuestions] = useState([])
     const [showStartButton, setShowStartButton] = useState(false)
 
+
     useEffect(() => {
         axios({
             url: 'https://opentdb.com/api.php',
@@ -14,6 +15,7 @@ function Form(props) {
                 amount: 10,
                 type: 'boolean',
                 category: selectedCategory,
+
             }
 
         }).then((apiData) => {
@@ -44,14 +46,16 @@ function Form(props) {
 
     return (
         <section className="categories">
-            <p>Please select a category to start the quiz</p>
+            <p>Select a category to start the quiz</p>
 
             <form action="" onSubmit={handleSelections}>
                 <fieldset>
                     <input type="radio" name="topic" value="9" id="general" onClick={handleCategoryChange} />
-                    <label htmlFor="general">General Knowledge</label>
+
+                    <label htmlFor="general">General</label>
 
                     <input type="radio" name="topic" value="27" id="animals" onClick={handleCategoryChange} />
+
                     <label htmlFor="animals">Animals</label>
 
                     <input type="radio" name="topic" value="31" id="anime" onClick={handleCategoryChange} />
@@ -96,7 +100,7 @@ function Form(props) {
                 <div className="buttonContainer">
                     {
                         showStartButton
-                            ? <button>Start</button>
+                            ? <button>START</button>
                             : null
                     }
                 </div>

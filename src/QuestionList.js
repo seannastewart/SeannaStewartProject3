@@ -90,9 +90,9 @@ function QuestionList(props) {
 
     return (
 
-        <div>
+        <section className="questions">
             {questionArray[currentQuestion]}
-        </div>
+        </section>
 
 
     )
