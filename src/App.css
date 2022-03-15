@@ -18,7 +18,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 body {
-    background-color: #1b1d1f;
+    background-color: #2a2a36;
     font-family: 'Rajdhani', sans-serif;
   
 }
@@ -36,6 +36,9 @@ header {
     text-align: center;
     height:20vh;
     color: #FEF9EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
@@ -47,13 +50,8 @@ button {
 h1 {
     font-size:60px;
     margin-bottom: 1%;
-    letter-spacing: 10px;
-      text-shadow:
-    0 0 6px rgba(202,228,225,0.92),
-    0 0 30px rgba(202,228,225,0.34),
-    0 0 12px rgba(8, 165, 165,0.52),
-    0 0 21px rgba(8, 165, 165,0.92),
-    0 0 34px rgba(8, 165, 165,0.78);
+    letter-spacing: 20px;
+    text-shadow:4px 2px teal;
 }
 
 main  {
@@ -67,7 +65,9 @@ input[type="radio"] {
  
 }
 
-
+.categories {
+    margin-top:4%;
+}
 
 .categories p {
     text-align: center;
@@ -92,19 +92,18 @@ input[type="radio"] {
     background-color: #0f8787;
     padding: 2%;
     width: 14%;
-color: #FEF9EF;
+    color: #FEF9EF;
     text-align: center;
     cursor: pointer;
-    border-radius: 20px;
-    /* border: 3px solid #334182 ; */
+    border-radius: 50px;
+    border: 3px solid #FEF9EF ;
     display: flex;
     align-items: center;
     justify-content: center;
     height:70px;
     font-size: 20px;
     font-weight: bold;
-    /* box-shadow: 0px 0px 15px 2px rgb(254 93 159); */
-    /* box-shadow: 0px 0px 11px 8px rgb(254 93 159 / 50%); */
+    transition: 0.1s ease-in;
     
 }
 
@@ -118,14 +117,15 @@ transform: scale(105%);
 .categories button {
     margin: 2%;
     background-color: #0f8787;
+    border: 3px solid #FEF9EF ;
     padding: 10px 10px;
-    border-radius: 20px;
-    width: 15%;
+    border-radius: 50px;
+    width: 20%;
     text-align: center;
     cursor: pointer;
-    border:none;
     font-size: 30px;
     color: #FEF9EF;
+    transition: 0.1s ease-in;
 }
 
 .categories button:hover {
@@ -143,12 +143,11 @@ transform: scale(105%);
 }
 
 .questionContainer fieldset {
-    box-shadow: 0px 0px 15px 2px #0f8787;
     border-radius: 30px;
     padding:5%;
     width:80%;
     position: relative;
-    background-color: #1b1d1f;;
+    background-color: #2a2a36;
     color: #FEF9EF;
     border:3px solid white;
 }
@@ -188,7 +187,7 @@ transform: scale(105%);
     left:10px;
     top:10px;
     border:none;
-    background-color: #1b1d1f;
+    background-color: #2a2a36;
     cursor:pointer;
     font-size: 30px;
     color:#FEF9EF;
@@ -207,10 +206,9 @@ transform: scale(105%);
     
 }
 .resultContainer {
-    background-color: #1b1d1f;
+    background-color: #2a2a36;
     color: #FEF9EF;
-    box-shadow: 0px 0px 15px 2px #0f8787;
-    border:2px solid #FEF9EF;
+    border:3px solid #FEF9EF;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -218,6 +216,7 @@ transform: scale(105%);
     justify-content: center;
     width: 50%;
     padding: 5%;
+    margin-bottom: 10%;
 }
 
 .resultContainer p {
@@ -248,9 +247,16 @@ footer {
     padding: 0.5%;
     font-size: 16px;
     height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a {
     text-decoration: none;
     color: #FEF9EF;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

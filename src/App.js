@@ -67,7 +67,7 @@ function App() {
         }
 
       </main>
-      <footer>Created at <a href="https://junocollege.com/">Juno College of Technology</a></footer>
+      <footer> <p>Created by <a href="https://github.com/seannastewart">Seanna Stewart</a> at <a href="https://junocollege.com/" target="_blank" rel="noreferrer"> Juno College of Technology</a></p></footer>
     </div>
   )
 }
