@@ -106,7 +106,7 @@ input[type="radio"] {
 
 .categories input[type="radio"]:checked + label,
 label:hover, .resultContainer button:hover{
-box-shadow: 0px 0px 15px 2px white;
+background-color: #474964;
 transform: scale(105%);
 
 }
@@ -293,6 +293,7 @@ footer a:hover {
     .categories label {
     width: 29%;
     height: 50px;
+    margin: 2% 1%;
 
     }
 
