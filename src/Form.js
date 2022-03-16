@@ -16,7 +16,6 @@ function Form(props) {
                 amount: 10,
                 type: 'boolean',
                 category: selectedCategory,
-
             }
 
         }).then((apiData) => {
@@ -32,11 +31,8 @@ function Form(props) {
         setShowStartButton(true)
     }
 
-
-
     const handleSelections = function (event) {
         props.handleFormCompletion(event, newQuestions)
-
     }
 
     return (

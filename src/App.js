@@ -5,8 +5,6 @@ import QuestionList from './QuestionList';
 import Results from './Results';
 
 
-
-
 function App() {
 
   const [questions, setQuestions] = useState([]);
@@ -22,8 +20,6 @@ function App() {
     setQuestions(questionArray)
     setShowForm(false)
     setShowQuestions(true);
-
-
 
   }
 
@@ -65,8 +61,6 @@ function App() {
             ? <Results score={finalScore} reset={clear} />
             : null
         }
-
-
 
 
       </main>

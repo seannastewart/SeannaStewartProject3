@@ -33,7 +33,6 @@ function QuestionList(props) {
                 <div className="questionContainer">
                     <div className="scoreContainer">
                         <h2>SCORE: {score}</h2>
-
                     </div>
 
                     <Question
