@@ -34,13 +34,12 @@ body {
 
 header { 
     text-align: center;
-    /* height:20vh; */
     color: #FEF9EF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding:0;
-    /* margin-bottom:5%; */
+ 
    
 }
 
@@ -56,9 +55,7 @@ h1 {
     text-shadow:4px 2px teal;
 }
 
-main  {
-    /* height:75vh; */
-}
+
 
 
 input[type="radio"] { 
@@ -107,8 +104,9 @@ input[type="radio"] {
 }
 
 .categories input[type="radio"]:checked + label,
-label:hover, .resultContainer button:hover{
-box-shadow: 0px 0px 15px 2px white;
+label:hover,
+ .resultContainer button:hover {
+background-color: #474964;
 transform: scale(105%);
 
 }
@@ -165,6 +163,7 @@ transform: scale(105%);
     font-size: 30px;
     border-radius: 20px;
     width: 200px;
+    transition: 0.1s ease-in;
 }
 
 .questionContainer p {
@@ -187,12 +186,13 @@ transform: scale(105%);
 .quit {
     position:absolute;
     left:10px;
-    top:10px;
+    top:5px;
     border:none;
     background-color: #2a2a36;
     cursor:pointer;
     font-size: 30px;
     color:#FEF9EF;
+    padding: 0;
 }
 
 .quit:hover {
@@ -263,14 +263,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* @media (max-width: 1120px) {
 
-.categories label {
-    margin: 1% 1%;
-    width: 16%;
-}
-
-} */
 
 @media (max-width: 1000px) {
 
@@ -294,6 +287,7 @@ footer a:hover {
     .categories label {
     width: 29%;
     height: 50px;
+    margin: 2% 1%;
 
     }
 
@@ -324,17 +318,18 @@ footer a:hover {
     }
 
     .questionContainer p,
-    .questionContainer label, 
+    .questionContainer label,
     .quit {
         font-size:25px;
     }
+
+  
      
 }
 
 @media (max-width: 500px) {
     h1 {
         margin: 5% 2%;
-        font-size: 45px;
         letter-spacing:0;
     }
     .categories label {
@@ -350,6 +345,8 @@ footer a:hover {
     .resultContainer p {
         font-size:25px;
     }
+
+    
 
     
    

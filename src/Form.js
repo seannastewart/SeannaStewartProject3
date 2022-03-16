@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 function Form(props) {
 
     const [selectedCategory, setSelectedCategory] = useState(9)
@@ -19,9 +20,6 @@ function Form(props) {
             }
 
         }).then((apiData) => {
-
-            console.log(apiData.data.results)
-            console.log('api was called')
             setNewQuestions(apiData.data.results)
         })
 
@@ -30,10 +28,8 @@ function Form(props) {
 
     const handleCategoryChange = function (event) {
         let categoryNumber = parseInt(event.target.value)
-        console.log(categoryNumber)
         setSelectedCategory(categoryNumber)
         setShowStartButton(true)
-        console.log('category updated to' + categoryNumber)
     }
 
 
@@ -41,7 +37,6 @@ function Form(props) {
     const handleSelections = function (event) {
         props.handleFormCompletion(event, newQuestions)
 
-        console.log('form submitted')
     }
 
     return (
@@ -100,7 +95,8 @@ function Form(props) {
                 <div className="buttonContainer">
                     {
                         showStartButton
-                            ? <button>START</button>
+                            ?
+                            <button>START</button>
                             : null
                     }
                 </div>

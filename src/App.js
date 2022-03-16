@@ -5,6 +5,7 @@ import QuestionList from './QuestionList';
 import Results from './Results';
 
 
+
 function App() {
 
   const [questions, setQuestions] = useState([]);
@@ -33,8 +34,6 @@ function App() {
 
 
   const handleResults = function (score) {
-
-    console.log(score);
     setFinalScore(score)
     setShowResults(true);
     setShowQuestions(false);
