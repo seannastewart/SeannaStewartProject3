@@ -46,7 +46,7 @@ function Form(props) {
 
     return (
         <section className="categories">
-            <p>Select a category to start the quiz</p>
+            <p>Select a category and click start to begin the quiz</p>
 
             <form action="" onSubmit={handleSelections}>
                 <fieldset>
