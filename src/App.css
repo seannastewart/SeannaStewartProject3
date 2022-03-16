@@ -105,7 +105,8 @@ input[type="radio"] {
 }
 
 .categories input[type="radio"]:checked + label,
-label:hover, .resultContainer button:hover{
+label:hover,
+ .resultContainer button:hover {
 background-color: #474964;
 transform: scale(105%);
 
@@ -163,6 +164,7 @@ transform: scale(105%);
     font-size: 30px;
     border-radius: 20px;
     width: 200px;
+    transition: 0.1s ease-in;
 }
 
 .questionContainer p {
@@ -337,7 +339,6 @@ footer a:hover {
 @media (max-width: 500px) {
     h1 {
         margin: 5% 2%;
-        font-size: 45px;
         letter-spacing:0;
     }
     .categories label {
