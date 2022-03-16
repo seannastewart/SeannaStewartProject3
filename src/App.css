@@ -34,13 +34,12 @@ body {
 
 header { 
     text-align: center;
-    /* height:20vh; */
     color: #FEF9EF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding:0;
-    /* margin-bottom:5%; */
+ 
    
 }
 
@@ -264,14 +263,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* @media (max-width: 1120px) {
 
-.categories label {
-    margin: 1% 1%;
-    width: 16%;
-}
-
-} */
 
 @media (max-width: 1000px) {
 
@@ -326,13 +318,12 @@ footer a:hover {
     }
 
     .questionContainer p,
-    .questionContainer label {
+    .questionContainer label,
+    .quit {
         font-size:25px;
     }
 
-    .quit {
-        font-size:20px;
-    }
+  
      
 }
 
@@ -354,6 +345,8 @@ footer a:hover {
     .resultContainer p {
         font-size:25px;
     }
+
+    
 
     
    

@@ -4,14 +4,12 @@ import { useState } from 'react';
 
 function QuestionList(props) {
 
-    console.log(props)
     const [score, setScore] = useState(0);
     const [currentQuestion, setCurrentQueston] = useState(0);
 
 
     const updateScore = function () {
         setScore(score + 1)
-        console.log(score + 1)
 
     }
 
@@ -86,7 +84,7 @@ function QuestionList(props) {
             )
         })
 
-    console.log(questionArray)
+
 
     return (
 
