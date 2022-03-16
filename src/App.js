@@ -6,6 +6,7 @@ import Results from './Results';
 
 
 
+
 function App() {
 
   const [questions, setQuestions] = useState([]);
@@ -64,6 +65,9 @@ function App() {
             ? <Results score={finalScore} reset={clear} />
             : null
         }
+
+
+
 
       </main>
       <footer> <p>Created by <a href="https://github.com/seannastewart">Seanna Stewart</a> at <a href="https://junocollege.com/" target="_blank" rel="noreferrer"> Juno College of Technology</a></p></footer>
